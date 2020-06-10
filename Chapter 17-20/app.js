@@ -1,74 +1,159 @@
 // Task 1
-var inp = prompt("Please input something for identification")
-// alert(inp.charCodeAt())
-if(inp.charCodeAt()===65 || inp.charCodeAt()===90 ){
-    alert("Upper Case Letter")
-}
-else if(inp.charCodeAt()===97 || inp.charCodeAt()===122 ){
-    alert("lower Case Letter")
-}
-else{
-    alert("not identified")
-}
-    
+var arr = [[4,2,4],[3,6,7]];
+alert(arr[0][1])
+
+
+
 // Task 2
-var a1 = +prompt("Enter First Number")
-var a2 = +prompt("Enter second Number")
-if (a1<a2){
-    alert("larger number is "+a2)
-}
-else{
-    alert("larger number is "+a1)
-}
+var arr = [[0,1,2,3],[1,0,1,2],[2,1,0,1]];
 
 
 // Task 3
-var a3 = +prompt("Please enter number to check positive negative or zero")
-// alert((a3+6))
-if(a3>0){
-    alert("Number is positive")
+for (var i = 0; i< 10; i++){
+    document.write((i+1)+"<br>")
 }
-else if (a3==0){
-    alert("Number is equal to zero")
-}
-else{
-    alert("Number is negative")
-}
+document.write("<br><br><br>")
+
 
 
 // Task 4
-var a4 = prompt("Enter to check alphabet is vowel")
-if(a4==="a" || a4==="e" || a4==="i" || a4==="o" || a4==="u" || a4==="A" || a4==="E" || a4==="I" || a4==="O" || a4==="U") {
-    alert("True")
+var tableNumber = +prompt("Enter a number to show its multipilication table")
+var tableLength = +prompt("Enter length multipilication table")
+for (var i = 0;i<tableLength;i++){
+    document.write(tableNumber+" X "+(i+1)+" = "+(tableNumber*tableLength)+"<br>")
 }
-else{
-    alert("False")
-}
+document.write("<br><br><br>")
+
 
 
 // Task 5
-var pass1 = "4564Asif"
-var pass2 = prompt("Please enter your Password")
-if(pass2===""){
-    alert("you have not entered any password")
+var fruits = ["apple","banana","mango","orange","strawberry"];
+
+for(var i = 0;i<fruits.length;i++){
+    document.write(fruits[i]+"<br>")
 }
-else{
-    if(pass1===pass2){
-        alert("Correct the password you entered matches the original password")
-    }
-    else{
-        alert("Incorrect Password")
-    }
+document.write("<br>")
+
+for(var i = 0;i<fruits.length;i++){
+    document.write("Element at index "+i+" is "+fruits[i]+"<br>")
 }
+document.write("<br><br><br>")
+
+
 
 // Task 6
-var greeting;
-var hour = 13;
+document.write("<h1>Counting</h1>")
+for(var i = 0; i<15;i++){
+    document.write(i+",")
+}
+document.write("<br>")
 
-if (hour < 18) {
-     greeting = "Good day"; 
+document.write("<h1>Reverse Counting</h1>")
+for(var i = 10; i>0;i--){
+    document.write(i+",")
 }
-else{
-    greeting = "Good evening"; 
+document.write("<br>")
+
+
+document.write("<h1>Even</h1>")
+for(var i = 0; i<=20;i++){
+    if((i%2) === 0){
+        document.write(i+",")
+    }
+    else{
+        continue
+    }    
 }
-alert(greeting)
+document.write("<br>")
+
+
+
+document.write("<h1>Odd</h1>")
+for(var i = 0; i<=20;i++){
+    if((i%2) !== 0){
+        document.write(i+",")
+    }
+    else{
+        continue
+    }    
+}
+document.write("<br>")
+
+
+
+document.write("<h1>Even</h1>")
+for(var i = 0; i<=20;i++){
+    if(i===0){
+        continue
+    }
+    if((i%2) === 0){
+        document.write(i+"k,")
+    }
+    else{
+        continue
+    }    
+}
+document.write("<br>")
+
+
+
+// Task 7
+var bakery = ["cake","apple pie","cookie","chips","patties"]
+var item = prompt("Welcome to ABC bakery. What do you want to order sir/ma'am")
+for(var i = 0;i<bakery.length;i++){
+    if(item===bakery[i]){
+        alert("cookie is available at index "+i+" in our bakery")
+        break
+    }
+    else{
+        if((i+1)===bakery.length){
+            alert("We are sorry "+item+" is not available in our bakery")
+        }
+    }
+    
+}
+document.write("<br><br><br>")
+
+
+
+
+
+// Task 8
+var arrItem = [24,53,78,91,12]
+document.write("Array items: ")
+var largest = arrItem[0]
+for(var i = 0;i<arrItem.length;i++){
+    if(arrItem[i]>largest){
+        largest = arrItem[i]
+    }
+    document.write(arrItem[i]+",")
+}
+document.write("<br>")
+document.write("The largest number is: "+largest)
+document.write("<br><br><br>")
+
+
+
+// Task 9
+var arrItem = [24,53,78,91,12]
+document.write("Array items: ")
+var small = arrItem[0]
+for(var i = 0;i<arrItem.length;i++){
+    if(arrItem[i]<small){
+        small = arrItem[i]
+    }
+    document.write(arrItem[i]+",")
+}
+document.write("<br>")
+document.write("The smallest number is: "+small)
+document.write("<br><br><br>")
+
+
+
+
+// Task 10
+for(var i = 0;i<=100;i++){
+    if(i>0 && (i%5)===0){
+        document.write(i+",")
+    }
+}

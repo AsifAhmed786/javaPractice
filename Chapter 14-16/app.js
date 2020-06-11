@@ -97,3 +97,80 @@ for(var i=0;i<studentScores.length;i++){
     document.write(studentScores[i]+",")
 
 }
+document.write("<br><br><br>")
+
+
+
+// Task 11
+var cities = ["Karachi","Lahore","Islamabad","Quetta","peshawar"]
+var selectedCities = cities.slice(1,4)
+// document.write(selectedCities)
+document.write("Cities List:<br>")
+for(var i=0; i<cities.length; i++){
+     document.write(cities[i]+",")
+};
+document.write("<br><br>")
+document.write("Selected cities list:<br>")
+for(var i = 0;i < selectedCities.length;i++){
+    document.write(selectedCities[i]+",")
+}
+document.write("<br><br><br>")
+
+
+
+// Task 12
+var arr = ["This","is","my","cat"]
+document.write("Array:<br>")
+for(var i = 0; i<arr.length; i++){
+    document.write(arr[i]+",")
+}
+document.write("<br>")
+document.write("String:<br>")
+document.write(arr.join(" "))
+document.write("<br><br><br>")
+
+
+
+// Task 13
+var devices = ["keyboard","mouse","printer","monitor"]
+document.write("Devices:<br>")
+for(var i = 0;i < devices.length; i++){
+    document.write(devices[i]+",")
+    
+}
+document.write("<br><br>")
+for(var i = 0;i < devices.length; i++){
+    document.write("Out:<br>")
+    document.write(devices[i]+"<br>")
+
+}
+document.write("<br><br><br>")
+
+
+// Task 14
+
+var devices = ["keyboard","mouse","printer","monitor"]
+document.write("Devices:<br>")
+for(var i = 0;i < devices.length; i++){
+    document.write(devices[i]+",")
+    
+}
+document.write("<br><br>")
+for(var i = (devices.length-1);i >= 0; i--){
+    document.write("Out:<br>")
+    document.write(devices[i]+"<br>")
+
+}
+document.write("<br><br><br>")
+
+
+
+
+// Task 15
+var oem = ["Apple","Samsung","Nokia","Sony","Haier"]
+document.write("<select name='devices' id=''>");
+for(var i = 0; i<oem.length; i++){
+    document.write("<option >"+oem[i]+"</option>");
+    
+}
+document.write("<select>")
